@@ -6,7 +6,7 @@ from buzz import generator
 app = Flask(__name__)
 
 signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
-
+#Writing comment to verify number of commits
 @app.route("/")
 def generate_buzz():
     page = '<html><body><h1>'
