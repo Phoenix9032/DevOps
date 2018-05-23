@@ -4,7 +4,7 @@ from flask import Flask
 from buzz import generator
 
 app = Flask(__name__)
-
+print("Testing Jira Integration")
 signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 #Writing comment to verify number of commits
 @app.route("/")
